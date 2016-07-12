@@ -30,6 +30,12 @@ namespace xml
   
     lua_State* L;
     
+    static int cf_panic(lua_State* _l)
+    {
+      throw SAXException(lua_tostring(_l, -1));
+      return 0;
+    }
+    
   };
   
 }
