@@ -1,11 +1,11 @@
 namespace xml
 {
   
-  class interpretator:public HandlerBase, public XMLFormatTarget
+  class interpreter:public HandlerBase, public XMLFormatTarget
   {
   public:
   
-    interpretator(const wxString& _f)
+    interpreter(const wxString& _f)
     {
       L = luaL_newstate();
       if(L)
