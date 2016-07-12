@@ -21,6 +21,11 @@ namespace xml
         throw std::bad_alloc("failed to allocate new Lua state for xml handler");
     }
     
+    ~interpreter()
+    {
+      lua_close(L);
+    }
+    
   private:
   
     lua_State* L;
