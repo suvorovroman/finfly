@@ -1,3 +1,3 @@
-namespace rle
-{
-}
+typedef unsigned char byte;
+
+class
