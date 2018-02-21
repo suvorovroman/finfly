@@ -1,3 +1,11 @@
 typedef unsigned char byte;
 
-class
+class block
+{
+public:
+
+  block* Next;
+  
+  byte Data[];
+  
+};
