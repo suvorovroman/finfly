@@ -1,3 +1,0 @@
-open class NodeSelectionFragment:Fragment
-{
-}
